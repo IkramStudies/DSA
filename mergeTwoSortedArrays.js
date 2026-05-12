@@ -43,40 +43,29 @@ for (let i = 0; i < arr.length; i++)
 }
 // 
 */
-const mergeTwoSorted = (arr1, arr2) => {
-  let smallest = +Infinity;
-  let newArr = [...arr1, ...arr2];
-  let arr3 = [];
-  for (let i = 0; i < newArr.length; i++) {
-    // i = 0; i < 7; i++
-    // 0 ; 0 < 7;
-    for (let j = 0; j < newArr.length; j++) {
-      // j = 0; j < 7; j++
-      if (newArr[i] < newArr[j] && newArr[i] < smallest)
-        //if (newArr[0] < newArr[0])
-        //if (0 < 0)
-        //j++;
-        //if (newArr[0] < newArr[1])
-        //if (1 < 3)
-        //j++
-        //j = 2; 2 < 7; j++
-        //if (newArr[0] < newArr[2])
-        //if (1 < 7)
-        smallest = newArr[i];
-      // smallest =
-      // smallest = newArr[0]
-    }
-  }
-  arr3.push(smallest);
-  for (let m = 0; m < newArr.length; m++) {
-    for (let n = 0; n < newArr.length; n++) {
-      if (newArr[m] > smallest && newArr[n] < newArr[m]) {
-        smallest = newArr[newArr.length - 1];
-      }
-      arr3.push(newArr[n]);
-    }
-  }
-  return arr3;
-};
+// const mergeTwoSorted = (arr1, arr2) => {
+//   let newArr = [...arr1, ...arr2];
+//   let smallest = +Infinity;
+//   for (let i = 0; i < newArr.length; i++) {
+//     for (let j = 0; j < newArr.length; j++) {
+//       if (newArr[i] < newArr[j] && newArr[i] < smallest) smallest = newArr[i];
+//     }
+//   }
+// };
+/*
 
-console.log(mergeTwoSorted([1, 3, 7], [2, 4, 5, 6]));
+*/
+//[2, 3, 4, 1, 7, 6, 8, 5];
+//[1, 2, 3, 4, 5, 6, 7];
+// if (newArr[i] < newArr[j] && newArr[i] > arr3[i])
+// console.log(mergeTwoSorted([2, 3, 4, 1], [7, 6, 8, 5]));
+/*
+for (let i = 0; i < newArr.length; i++)
+{
+  for (let j = 0; j < newArr.length; j++)
+  {
+    if (newArr[i] < newArr[j])
+      arr3.push(newArr[i])    
+  }
+}
+*/
