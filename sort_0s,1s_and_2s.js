@@ -38,6 +38,7 @@ for (let i = 0; i < arr1.length; i++)
 // [0, 0, 1, 1, 2, 2]
 //Saw the solution after lunch , stayed with the question for 45 mins
 // updated code
+// last attempted 18-05-2026
 const sortArray = (arr) => {
   let zeroCount = 0;
   let oneCount = 0;
